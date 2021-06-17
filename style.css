@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.lines {
+    width: 10px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    margin-left: 195px;
+    /* as 400 width and its half is 200 and line width is 10 so 10 ka half is 5 so 200-5=195==middle */
+}
+
+.car,
+.enemy {
+    width: 50px;
+    height: 80px;
+    background: red;
+    position: absolute;
+    bottom: 120px;
+    background-image: url("https://i.ibb.co/jfY1jxY/car123.png");
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjG_2_1kBE8yHZLynJn6-s1BQcCsNUAOkzQ&usqp=CAU'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.gameArea {
+    width: 400px;
+    height: 100vh;
+    background: #2d3436;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+}
+
+.score {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background: rgb(83, 173, 83);
+    width: 300px;
+    /* height: 70px; */
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    /* font-family: fantasy; */
+    box-shadow: 0 5px 5px #777;
+}
+
+.startScreen {
+    position: absolute;
+    background-color: #e84393;
+    left: 24%;
+    top: 45%;
+    transform: translate (-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid#e84393;
+    padding: 15px;
+    margin: auto;
+    width: 50%;
+    cursor: pointer;
+    /* font-family: carfont; */
+    letter-spacing: 5;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    /* box-shadow: 0 5px 5px #777; */
+    box-shadow: 0 0 0 5px white, 0 0 2px white, 13px 13px 20px black, -10px -10px 20px whitesmoke;
+}
+
+.carGame {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/d0/9c/4c/d09c4cfd1b93cc66dc13c8b461fd2145.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
